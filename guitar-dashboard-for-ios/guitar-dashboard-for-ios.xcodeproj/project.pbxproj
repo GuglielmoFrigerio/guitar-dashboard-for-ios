@@ -18,6 +18,8 @@
 		BFBE12AC2773482D001CF3C5 /* MidiOutputPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE12AA2773482D001CF3C5 /* MidiOutputPort.swift */; };
 		BFBE12AE2773981C001CF3C5 /* MidiFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE12AD2773981C001CF3C5 /* MidiFactory.swift */; };
 		BFBE12B02773A0CA001CF3C5 /* MidiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE12AF2773A0CA001CF3C5 /* MidiError.swift */; };
+		BFBE12B22773B4B5001CF3C5 /* FractalDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE12B12773B4B5001CF3C5 /* FractalDevice.swift */; };
+		BFBE12B42773B5C0001CF3C5 /* ProgramScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE12B32773B5C0001CF3C5 /* ProgramScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		BFBE12AA2773482D001CF3C5 /* MidiOutputPort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiOutputPort.swift; sourceTree = "<group>"; };
 		BFBE12AD2773981C001CF3C5 /* MidiFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiFactory.swift; sourceTree = "<group>"; };
 		BFBE12AF2773A0CA001CF3C5 /* MidiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiError.swift; sourceTree = "<group>"; };
+		BFBE12B12773B4B5001CF3C5 /* FractalDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalDevice.swift; sourceTree = "<group>"; };
+		BFBE12B32773B5C0001CF3C5 /* ProgramScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 				BFBE12AA2773482D001CF3C5 /* MidiOutputPort.swift */,
 				BFBE12AD2773981C001CF3C5 /* MidiFactory.swift */,
 				BFBE12AF2773A0CA001CF3C5 /* MidiError.swift */,
+				BFBE12B12773B4B5001CF3C5 /* FractalDevice.swift */,
+				BFBE12B32773B5C0001CF3C5 /* ProgramScene.swift */,
 			);
 			path = Midi;
 			sourceTree = "<group>";
@@ -278,7 +284,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFBE12AC2773482D001CF3C5 /* MidiOutputPort.swift in Sources */,
+				BFBE12B22773B4B5001CF3C5 /* FractalDevice.swift in Sources */,
 				BF6C355E277326E600DBE3D5 /* ContentView.swift in Sources */,
+				BFBE12B42773B5C0001CF3C5 /* ProgramScene.swift in Sources */,
 				BF6C355C277326E600DBE3D5 /* guitar_dashboard_for_iosApp.swift in Sources */,
 				BFBE12B02773A0CA001CF3C5 /* MidiError.swift in Sources */,
 				BFBE12AB2773482D001CF3C5 /* MidiInfo.swift in Sources */,
