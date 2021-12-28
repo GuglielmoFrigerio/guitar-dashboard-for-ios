@@ -10,21 +10,40 @@ import SwiftUI
 struct ContentView: View {
     let midiFactory: MidiFactory?
     var midiOutputPort: MidiOutputPort? = nil
+    var fractalDevice: FractalDevice? = nil
     
+    private func sendFirstProgramScene() {
+        
+        let programScene = ProgramScene(programNumber: 23, sceneNumber: 4)
+        try! fractalDevice?.send(programScene: programScene)
+    }
+    
+    private func sendSecondProgramScene() {
+        
+        let programScene = ProgramScene(programNumber: 411, sceneNumber: 7)
+        try! fractalDevice?.send(programScene: programScene)
+    }
+
     init() {
         midiFactory = try? MidiFactory(clientName: "FractalClient")
         if let uwMidiFactory = midiFactory {
-            midiOutputPort = uwMidiFactory.createOutputPort(deviceName: "Axe-Fx III")
-            if let uwOutputPort = midiOutputPort {
-                try? uwOutputPort.sendProgramChange(channel: 0, program: 20)
-            }
+            fractalDevice = FractalDevice(midiFactory: uwMidiFactory, deviceName: "Axe-Fx III")
         }
     }
     
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
+        VStack {
+            Text("Hello, world!")
+                .padding()
+            Button(action: sendFirstProgramScene) {
+                Text("Send 23.4")
+            }.padding()
+            Button(action: sendSecondProgramScene) {
+                Text("Send 411.7")
+            }.padding()
+
+        }
+    }    
 }
 
 struct ContentView_Previews: PreviewProvider {

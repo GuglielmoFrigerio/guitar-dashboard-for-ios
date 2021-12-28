@@ -14,4 +14,5 @@ struct guitar_dashboard_for_iosApp: App {
             ContentView()
         }
     }
+    
 }

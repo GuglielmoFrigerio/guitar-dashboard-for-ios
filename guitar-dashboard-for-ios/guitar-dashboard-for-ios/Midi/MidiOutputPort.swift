@@ -38,6 +38,22 @@ struct MidiOutputPort {
         }
     }
     
+    func sendControlChange(channel: UInt8, control: UInt8, value: UInt8) throws {
+        var packet: MIDIPacket = MIDIPacket();
+        packet.timeStamp = 0;
+        packet.length = 3;
+        packet.data.0 = 0xB0 + channel;
+        packet.data.1 = control;
+        packet.data.2 = value;
+
+        var packetList:MIDIPacketList = MIDIPacketList(numPackets: 1, packet: packet);
+        let status = MIDISend(midiPortRef, midiEndpointRef, &packetList)
+        if status != noErr {
+            throw MidiError.MidiOperationFailed(errorCode: status, functionName: "MIDISend")
+        }
+
+    }
+    
     func sendbankAndProgram(channel: UInt8, bankNumber: UInt8, programNumber: UInt8) throws {
         var packet: MIDIPacket = MIDIPacket();
         packet.timeStamp = 0;
