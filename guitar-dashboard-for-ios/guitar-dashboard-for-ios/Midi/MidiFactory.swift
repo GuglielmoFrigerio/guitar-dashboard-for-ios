@@ -8,7 +8,7 @@
 import Foundation
 import CoreMIDI
 
-struct MidiFactory {
+struct MidiFactory: MidiFactoring {
     var midiClientRef: MIDIClientRef
     
     private func getSourceIndex(deviceName: String) -> Int {
@@ -46,5 +46,24 @@ struct MidiFactory {
             return try? MidiOutputPort(midiClientRef: midiClientRef, portName: deviceName, sourceIndex: sourceIndex)
         }
         return nil
+    }
+    
+    func getMidiSources() -> [String] {
+        
+        var midiSources = [String]()
+        
+        let numberOfSources = MIDIGetNumberOfSources()
+        
+        for idx in 0...numberOfSources {
+            let midiEndpointRef = MIDIGetSource(idx)
+            var displayName : Unmanaged<CFString>?
+            let err = MIDIObjectGetStringProperty(midiEndpointRef, kMIDIPropertyDisplayName, &displayName)
+            if (err == noErr) {
+                midiSources.append(displayName!.takeRetainedValue() as String)
+            }
+        }
+        
+        return midiSources
+
     }
 }

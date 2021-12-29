@@ -8,42 +8,47 @@
 import SwiftUI
 
 struct ContentView: View {
-    let midiFactory: MidiFactory?
-    var midiOutputPort: MidiOutputPort? = nil
-    var fractalDevice: FractalDevice? = nil
+    var devicesManager: DevicesManager? = nil
     
     private func sendFirstProgramScene() {
         
-        let programScene = ProgramScene(programNumber: 23, sceneNumber: 4)
-        try! fractalDevice?.send(programScene: programScene)
     }
     
     private func sendSecondProgramScene() {
         
-        let programScene = ProgramScene(programNumber: 411, sceneNumber: 7)
-        try! fractalDevice?.send(programScene: programScene)
     }
 
     init() {
-        midiFactory = try? MidiFactory(clientName: "FractalClient")
-        if let uwMidiFactory = midiFactory {
-            fractalDevice = FractalDevice(midiFactory: uwMidiFactory, deviceName: "Axe-Fx III")
+        guard let asset = NSDataAsset(name: "Data") else {
+            print("NSDataAsset failed")
+            return
         }
+        
+        let data = asset.data
+        let configRoot: ConfigRoot = try! JSONDecoder().decode(ConfigRoot.self, from: data)
+        devicesManager = DevicesManager(libraries: configRoot.libraries)
+
     }
     
     var body: some View {
-        VStack {
-            Text("Hello, world!")
-                .padding()
-            Button(action: sendFirstProgramScene) {
-                Text("Send 23.4")
-            }.padding()
-            Button(action: sendSecondProgramScene) {
-                Text("Send 411.7")
-            }.padding()
-
+        NavigationView() {
+            List() {
+                NavigationLink(destination: Text("Second View")) {
+                    Text("Hello, world!")
+                }
+                NavigationLink(destination: Text("Tird View")) {
+                    Text("Hello, world 2!")
+                }
+                NavigationLink(destination: SongListView()) {
+                    Text("Song List View")
+                }
+                NavigationLink(destination: MidiPortsView()) {
+                    Text("List Midi Ports")
+                }
+            }
+            .navigationBarTitle("Libraries")
         }
-    }    
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {

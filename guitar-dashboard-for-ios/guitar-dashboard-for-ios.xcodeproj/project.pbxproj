@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF04C815277B242100B8A01A /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04C814277B242100B8A01A /* Song.swift */; };
+		BF4BCFED277B44D20065B21D /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4BCFEC277B44D20065B21D /* Marker.swift */; };
+		BF4BCFF1277B45D70065B21D /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4BCFF0277B45D70065B21D /* Track.swift */; };
+		BF4BCFF3277B46D40065B21D /* Patch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4BCFF2277B46D40065B21D /* Patch.swift */; };
+		BF4BCFF5277B47460065B21D /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4BCFF4277B47460065B21D /* Program.swift */; };
+		BF4BCFF7277B48600065B21D /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4BCFF6277B48600065B21D /* Library.swift */; };
+		BF4BCFF9277B493D0065B21D /* ConfigRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4BCFF8277B493D0065B21D /* ConfigRoot.swift */; };
+		BF4BCFFC277B4CE90065B21D /* DevicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4BCFFB277B4CE90065B21D /* DevicesManager.swift */; };
 		BF6C355C277326E600DBE3D5 /* guitar_dashboard_for_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6C355B277326E600DBE3D5 /* guitar_dashboard_for_iosApp.swift */; };
 		BF6C355E277326E600DBE3D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6C355D277326E600DBE3D5 /* ContentView.swift */; };
 		BF6C3560277326E700DBE3D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6C355F277326E700DBE3D5 /* Assets.xcassets */; };
@@ -14,6 +22,11 @@
 		BF6C356D277326E800DBE3D5 /* guitar_dashboard_for_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6C356C277326E800DBE3D5 /* guitar_dashboard_for_iosTests.swift */; };
 		BF6C3577277326E800DBE3D5 /* guitar_dashboard_for_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6C3576277326E800DBE3D5 /* guitar_dashboard_for_iosUITests.swift */; };
 		BF6C3579277326E800DBE3D5 /* guitar_dashboard_for_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6C3578277326E800DBE3D5 /* guitar_dashboard_for_iosUITestsLaunchTests.swift */; };
+		BFAA8F23277B79A400B65DBF /* SongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA8F22277B79A400B65DBF /* SongView.swift */; };
+		BFAA8F25277B7EF700B65DBF /* SongListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA8F24277B7EF700B65DBF /* SongListView.swift */; };
+		BFAA8F28277C69BE00B65DBF /* MidiPortsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA8F27277C69BE00B65DBF /* MidiPortsView.swift */; };
+		BFAA8F2A277C6FFF00B65DBF /* MidiFactoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA8F29277C6FFF00B65DBF /* MidiFactoring.swift */; };
+		BFAA8F2D277C73A300B65DBF /* DIContainerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAA8F2C277C73A300B65DBF /* DIContainerProtocol.swift */; };
 		BFBE12AB2773482D001CF3C5 /* MidiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE12A92773482D001CF3C5 /* MidiInfo.swift */; };
 		BFBE12AC2773482D001CF3C5 /* MidiOutputPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE12AA2773482D001CF3C5 /* MidiOutputPort.swift */; };
 		BFBE12AE2773981C001CF3C5 /* MidiFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE12AD2773981C001CF3C5 /* MidiFactory.swift */; };
@@ -40,6 +53,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF04C814277B242100B8A01A /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		BF4BCFEC277B44D20065B21D /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
+		BF4BCFF0277B45D70065B21D /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		BF4BCFF2277B46D40065B21D /* Patch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patch.swift; sourceTree = "<group>"; };
+		BF4BCFF4277B47460065B21D /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		BF4BCFF6277B48600065B21D /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		BF4BCFF8277B493D0065B21D /* ConfigRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigRoot.swift; sourceTree = "<group>"; };
+		BF4BCFFB277B4CE90065B21D /* DevicesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesManager.swift; sourceTree = "<group>"; };
 		BF6C3558277326E600DBE3D5 /* guitar-dashboard-for-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "guitar-dashboard-for-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6C355B277326E600DBE3D5 /* guitar_dashboard_for_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guitar_dashboard_for_iosApp.swift; sourceTree = "<group>"; };
 		BF6C355D277326E600DBE3D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +71,11 @@
 		BF6C3572277326E800DBE3D5 /* guitar-dashboard-for-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "guitar-dashboard-for-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6C3576277326E800DBE3D5 /* guitar_dashboard_for_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guitar_dashboard_for_iosUITests.swift; sourceTree = "<group>"; };
 		BF6C3578277326E800DBE3D5 /* guitar_dashboard_for_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guitar_dashboard_for_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BFAA8F22277B79A400B65DBF /* SongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongView.swift; sourceTree = "<group>"; };
+		BFAA8F24277B7EF700B65DBF /* SongListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListView.swift; sourceTree = "<group>"; };
+		BFAA8F27277C69BE00B65DBF /* MidiPortsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiPortsView.swift; sourceTree = "<group>"; };
+		BFAA8F29277C6FFF00B65DBF /* MidiFactoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiFactoring.swift; sourceTree = "<group>"; };
+		BFAA8F2C277C73A300B65DBF /* DIContainerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainerProtocol.swift; sourceTree = "<group>"; };
 		BFBE12A92773482D001CF3C5 /* MidiInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiInfo.swift; sourceTree = "<group>"; };
 		BFBE12AA2773482D001CF3C5 /* MidiOutputPort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiOutputPort.swift; sourceTree = "<group>"; };
 		BFBE12AD2773981C001CF3C5 /* MidiFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiFactory.swift; sourceTree = "<group>"; };
@@ -83,6 +109,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF04C813277B23FD00B8A01A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF04C814277B242100B8A01A /* Song.swift */,
+				BF4BCFEC277B44D20065B21D /* Marker.swift */,
+				BF4BCFF0277B45D70065B21D /* Track.swift */,
+				BF4BCFF2277B46D40065B21D /* Patch.swift */,
+				BF4BCFF4277B47460065B21D /* Program.swift */,
+				BF4BCFF6277B48600065B21D /* Library.swift */,
+				BF4BCFF8277B493D0065B21D /* ConfigRoot.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BF4BCFFA277B4CD60065B21D /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				BF4BCFFB277B4CE90065B21D /* DevicesManager.swift */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
 		BF6C354F277326E600DBE3D5 = {
 			isa = PBXGroup;
 			children = (
@@ -106,11 +154,17 @@
 		BF6C355A277326E600DBE3D5 /* guitar-dashboard-for-ios */ = {
 			isa = PBXGroup;
 			children = (
+				BFAA8F2B277C737100B65DBF /* Tools */,
+				BFAA8F26277C69A200B65DBF /* Views */,
+				BF4BCFFA277B4CD60065B21D /* Devices */,
+				BF04C813277B23FD00B8A01A /* Models */,
 				BFBE12A8277347C2001CF3C5 /* Midi */,
 				BF6C355B277326E600DBE3D5 /* guitar_dashboard_for_iosApp.swift */,
 				BF6C355D277326E600DBE3D5 /* ContentView.swift */,
 				BF6C355F277326E700DBE3D5 /* Assets.xcassets */,
 				BF6C3561277326E700DBE3D5 /* Preview Content */,
+				BFAA8F22277B79A400B65DBF /* SongView.swift */,
+				BFAA8F24277B7EF700B65DBF /* SongListView.swift */,
 			);
 			path = "guitar-dashboard-for-ios";
 			sourceTree = "<group>";
@@ -140,6 +194,22 @@
 			path = "guitar-dashboard-for-iosUITests";
 			sourceTree = "<group>";
 		};
+		BFAA8F26277C69A200B65DBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFAA8F27277C69BE00B65DBF /* MidiPortsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BFAA8F2B277C737100B65DBF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				BFAA8F2C277C73A300B65DBF /* DIContainerProtocol.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		BFBE12A8277347C2001CF3C5 /* Midi */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +219,7 @@
 				BFBE12AF2773A0CA001CF3C5 /* MidiError.swift */,
 				BFBE12B12773B4B5001CF3C5 /* FractalDevice.swift */,
 				BFBE12B32773B5C0001CF3C5 /* ProgramScene.swift */,
+				BFAA8F29277C6FFF00B65DBF /* MidiFactoring.swift */,
 			);
 			path = Midi;
 			sourceTree = "<group>";
@@ -283,14 +354,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF04C815277B242100B8A01A /* Song.swift in Sources */,
+				BF4BCFF7277B48600065B21D /* Library.swift in Sources */,
+				BFAA8F2A277C6FFF00B65DBF /* MidiFactoring.swift in Sources */,
+				BFAA8F23277B79A400B65DBF /* SongView.swift in Sources */,
+				BF4BCFF1277B45D70065B21D /* Track.swift in Sources */,
 				BFBE12AC2773482D001CF3C5 /* MidiOutputPort.swift in Sources */,
+				BFAA8F28277C69BE00B65DBF /* MidiPortsView.swift in Sources */,
 				BFBE12B22773B4B5001CF3C5 /* FractalDevice.swift in Sources */,
 				BF6C355E277326E600DBE3D5 /* ContentView.swift in Sources */,
+				BFAA8F25277B7EF700B65DBF /* SongListView.swift in Sources */,
 				BFBE12B42773B5C0001CF3C5 /* ProgramScene.swift in Sources */,
 				BF6C355C277326E600DBE3D5 /* guitar_dashboard_for_iosApp.swift in Sources */,
 				BFBE12B02773A0CA001CF3C5 /* MidiError.swift in Sources */,
 				BFBE12AB2773482D001CF3C5 /* MidiInfo.swift in Sources */,
+				BF4BCFF9277B493D0065B21D /* ConfigRoot.swift in Sources */,
+				BFAA8F2D277C73A300B65DBF /* DIContainerProtocol.swift in Sources */,
 				BFBE12AE2773981C001CF3C5 /* MidiFactory.swift in Sources */,
+				BF4BCFF5277B47460065B21D /* Program.swift in Sources */,
+				BF4BCFFC277B4CE90065B21D /* DevicesManager.swift in Sources */,
+				BF4BCFF3277B46D40065B21D /* Patch.swift in Sources */,
+				BF4BCFED277B44D20065B21D /* Marker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
