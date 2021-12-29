@@ -25,3 +25,6 @@ DerivedData/
 ## Gcc Patch
 /*.gcno
 .DS_Store
+XmlToJsonConverter/.vs
+XmlToJsonConverter/XmlToJsonConverter/bin
+XmlToJsonConverter/XmlToJsonConverter/obj

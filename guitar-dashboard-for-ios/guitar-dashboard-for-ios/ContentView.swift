@@ -19,7 +19,7 @@ struct ContentView: View {
     }
 
     init() {
-        guard let asset = NSDataAsset(name: "Data") else {
+        guard let asset = NSDataAsset(name: "DeviceConfiguration") else {
             print("NSDataAsset failed")
             return
         }
