@@ -19,13 +19,14 @@ struct ContentView: View {
     }
 
     init() {
+        // DeviceConfiguration
         guard let asset = NSDataAsset(name: "DeviceConfiguration") else {
             print("NSDataAsset failed")
             return
         }
         
         let data = asset.data
-        let configRoot: ConfigRoot = try! JSONDecoder().decode(ConfigRoot.self, from: data)
+        let configRoot: ConfigRootModel = try! JSONDecoder().decode(ConfigRootModel.self, from: data)
         devicesManager = DevicesManager(libraries: configRoot.libraries)
 
     }

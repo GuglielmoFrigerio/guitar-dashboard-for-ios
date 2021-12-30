@@ -8,7 +8,7 @@
 import Foundation
 import CoreMIDI
 
-struct MidiFactory: MidiFactoring {
+struct MidiFactory: MidiFactoryProtocol {
     var midiClientRef: MIDIClientRef
     
     private func getSourceIndex(deviceName: String) -> Int {

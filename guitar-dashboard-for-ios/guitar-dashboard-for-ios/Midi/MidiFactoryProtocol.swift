@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol MidiFactoring {
+protocol MidiFactoryProtocol {
     func getMidiSources() -> [String]
 }

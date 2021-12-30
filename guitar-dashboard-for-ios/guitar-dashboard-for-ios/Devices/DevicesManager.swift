@@ -8,16 +8,16 @@
 import Foundation
 
 class DevicesManager {
-    let libraries: [Library]
+    private let libraries: [LibraryModel]
     let midiFactory: MidiFactory?
     var fractalDevice: FractalDevice? = nil
 
-    init(libraries: [Library]) {
+    init(libraries: [LibraryModel]) {
         self.libraries = libraries
         midiFactory = try? MidiFactory(clientName: "FractalClient")
         if let uwMidiFactory = midiFactory {
             fractalDevice = FractalDevice(midiFactory: uwMidiFactory, deviceName: "Axe-Fx III")
-            DIContainer.shared.register(type: MidiFactoring.self, component: uwMidiFactory)
+            DIContainer.shared.register(type: MidiFactoryProtocol.self, component: uwMidiFactory)
         }
-    }
+    }    
 }

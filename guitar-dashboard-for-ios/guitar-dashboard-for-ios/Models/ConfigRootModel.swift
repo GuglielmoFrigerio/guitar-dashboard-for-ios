@@ -1,5 +1,5 @@
 //
-//  Track.swift
+//  ConfigRoot.swift
 //  guitar-dashboard-for-ios
 //
 //  Created by Guglielmo Frigerio on 28/12/21.
@@ -7,7 +7,6 @@
 
 import Foundation
 
-struct Track: Decodable {
-    let name: String
-    let markers: [Marker]
+struct ConfigRootModel: Decodable {
+    let libraries: [LibraryModel]
 }

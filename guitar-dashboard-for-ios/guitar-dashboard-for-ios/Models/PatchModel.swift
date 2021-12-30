@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Patch: Decodable {
-    let name: String
-    let axeFx2: Program
-    let axeFx3: Program
+struct PatchModel: Decodable {
+    let name: String?
+    let axeFx2: ProgramModel?
+    let axeFx3: ProgramModel?
 }

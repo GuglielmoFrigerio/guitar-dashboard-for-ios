@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct MidiPortsView: View {
-    var midiFactory: MidiFactoring?
+    var midiFactory: MidiFactoryProtocol?
     var midiSourceNames: [String] = []
     
     init() {
-        self.midiFactory = DIContainer.shared.resolve(type: MidiFactoring.self)
+        self.midiFactory = DIContainer.shared.resolve(type: MidiFactoryProtocol.self)
         if let msn = midiFactory?.getMidiSources() {
             self.midiSourceNames = msn
         }
