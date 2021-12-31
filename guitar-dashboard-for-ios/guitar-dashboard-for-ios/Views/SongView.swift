@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct SongView: View {
-    var title: String
+    let song: Song
+    
+    init(_ song: Song) {
+        self.song = song
+    }
+    
     var body: some View {
-        Text(title)
+        List {
+            ForEach(song.patches, id: \.self) { patch in
+                Text(patch.name)
+            }
+        }
     }
     
 }

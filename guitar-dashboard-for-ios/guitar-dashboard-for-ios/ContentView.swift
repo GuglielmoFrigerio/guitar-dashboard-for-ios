@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var devicesManager: DevicesManager? = nil
+    var devicesManager: DevicesManager = DevicesManager()
     
     private func sendFirstProgramScene() {
         
@@ -34,14 +34,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView() {
             List() {
-                NavigationLink(destination: Text("Second View")) {
-                    Text("Hello, world!")
-                }
-                NavigationLink(destination: Text("Tird View")) {
-                    Text("Hello, world 2!")
-                }
-                NavigationLink(destination: SongListView()) {
-                    Text("Song List View")
+                NavigationLink(destination: MainView(devicesManager)) {
+                    Text("Main View")
                 }
                 NavigationLink(destination: MidiPortsView()) {
                     Text("List Midi Ports")

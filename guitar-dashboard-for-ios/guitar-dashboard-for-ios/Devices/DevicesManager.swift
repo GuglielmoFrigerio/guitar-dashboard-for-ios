@@ -7,17 +7,28 @@
 
 import Foundation
 
-class DevicesManager {
-    private let libraries: [LibraryModel]
+class DevicesManager: DeviceManagerProtocol {
+    private let libraryModels: [LibraryModel]
+    var libraries: [Library] = []
     let midiFactory: MidiFactory?
     var fractalDevice: FractalDevice? = nil
+    
+    init() {
+        midiFactory = nil
+        libraryModels = []
+    }
 
     init(libraries: [LibraryModel]) {
-        self.libraries = libraries
+        self.libraryModels = libraries        
+        
         midiFactory = try? MidiFactory(clientName: "FractalClient")
         if let uwMidiFactory = midiFactory {
             fractalDevice = FractalDevice(midiFactory: uwMidiFactory, deviceName: "Axe-Fx III")
             DIContainer.shared.register(type: MidiFactoryProtocol.self, component: uwMidiFactory)
         }
-    }    
+        
+        for libMode in libraryModels {
+            self.libraries.append(Library(libMode, self))
+        }
+    }
 }

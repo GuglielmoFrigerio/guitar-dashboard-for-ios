@@ -8,5 +8,6 @@
 import Foundation
 
 protocol DeviceManagerProtocol {
+    var libraries: [Library] { get }
     
 }
