@@ -7,10 +7,11 @@
 
 import Foundation
 
-struct Patch: Hashable {
+struct Patch: Hashable, Identifiable {
     let name: String
     var axeFx2: ProgramScene?
     var axeFx3: ProgramScene?
+    let id = UUID()
     
     init(_ patchModel: PatchModel) {
         if let uwName = patchModel.name {
