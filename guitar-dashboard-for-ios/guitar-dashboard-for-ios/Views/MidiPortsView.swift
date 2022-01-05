@@ -10,18 +10,31 @@ import SwiftUI
 struct MidiPortsView: View {
     var midiFactory: MidiFactoryProtocol?
     var midiSourceNames: [String] = []
+    var midiDestinationNames: [String] = []
     
     init() {
         self.midiFactory = DIContainer.shared.resolve(type: MidiFactoryProtocol.self)
         if let msn = midiFactory?.getMidiSources() {
             self.midiSourceNames = msn
         }
+        if let mdn = midiFactory?.getMidiDestinations() {
+            self.midiDestinationNames = mdn
+        }
     }
     
     
     var body: some View {
-        ForEach(midiSourceNames, id: \.self) { name in
-            Text(name)
+        List() {
+            Section(header: Text("Sources")) {
+                ForEach(midiSourceNames, id: \.self) { name in
+                    Text(name)
+                }
+            }
+            Section(header: Text("Destinations")) {
+                ForEach(midiDestinationNames, id: \.self) { name in
+                    Text(name)
+                }
+            }
         }
-    }    
+    }
 }

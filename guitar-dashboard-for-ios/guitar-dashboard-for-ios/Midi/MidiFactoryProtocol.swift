@@ -9,4 +9,5 @@ import Foundation
 
 protocol MidiFactoryProtocol {
     func getMidiSources() -> [String]
+    func getMidiDestinations() -> [String]
 }

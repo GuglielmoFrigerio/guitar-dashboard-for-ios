@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BF04C815277B242100B8A01A /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04C814277B242100B8A01A /* SongModel.swift */; };
+		BF1B919E27806C5000451062 /* ListLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1B919D27806C5000451062 /* ListLabView.swift */; };
+		BF1B91A02782FBBA00451062 /* PatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1B919F2782FBBA00451062 /* PatchView.swift */; };
 		BF4BCFED277B44D20065B21D /* MarkerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4BCFEC277B44D20065B21D /* MarkerModel.swift */; };
 		BF4BCFF1277B45D70065B21D /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4BCFF0277B45D70065B21D /* TrackModel.swift */; };
 		BF4BCFF3277B46D40065B21D /* PatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4BCFF2277B46D40065B21D /* PatchModel.swift */; };
@@ -39,6 +41,8 @@
 		BFBE12B02773A0CA001CF3C5 /* MidiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE12AF2773A0CA001CF3C5 /* MidiError.swift */; };
 		BFBE12B22773B4B5001CF3C5 /* FractalDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE12B12773B4B5001CF3C5 /* FractalDevice.swift */; };
 		BFBE12B42773B5C0001CF3C5 /* ProgramScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE12B32773B5C0001CF3C5 /* ProgramScene.swift */; };
+		BFF763E02785F6B9000766F8 /* MidiInputPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF763DF2785F6B9000766F8 /* MidiInputPort.swift */; };
+		BFF763E22785FB46000766F8 /* Pedalboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF763E12785FB46000766F8 /* Pedalboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,8 @@
 
 /* Begin PBXFileReference section */
 		BF04C814277B242100B8A01A /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
+		BF1B919D27806C5000451062 /* ListLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLabView.swift; sourceTree = "<group>"; };
+		BF1B919F2782FBBA00451062 /* PatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchView.swift; sourceTree = "<group>"; };
 		BF4BCFEC277B44D20065B21D /* MarkerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerModel.swift; sourceTree = "<group>"; };
 		BF4BCFF0277B45D70065B21D /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
 		BF4BCFF2277B46D40065B21D /* PatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchModel.swift; sourceTree = "<group>"; };
@@ -94,6 +100,8 @@
 		BFBE12AF2773A0CA001CF3C5 /* MidiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiError.swift; sourceTree = "<group>"; };
 		BFBE12B12773B4B5001CF3C5 /* FractalDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalDevice.swift; sourceTree = "<group>"; };
 		BFBE12B32773B5C0001CF3C5 /* ProgramScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramScene.swift; sourceTree = "<group>"; };
+		BFF763DF2785F6B9000766F8 /* MidiInputPort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiInputPort.swift; sourceTree = "<group>"; };
+		BFF763E12785FB46000766F8 /* Pedalboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedalboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +151,7 @@
 				BF68DC02277E1C7B007907A3 /* Patch.swift */,
 				BF68DC04277E1CF8007907A3 /* Song.swift */,
 				BF68DC06277F103E007907A3 /* Library.swift */,
+				BFF763E12785FB46000766F8 /* Pedalboard.swift */,
 			);
 			path = Devices;
 			sourceTree = "<group>";
@@ -215,6 +224,8 @@
 				BFAA8F24277B7EF700B65DBF /* LibraryView.swift */,
 				BFAA8F27277C69BE00B65DBF /* MidiPortsView.swift */,
 				BF68DC08277F7320007907A3 /* MainView.swift */,
+				BF1B919D27806C5000451062 /* ListLabView.swift */,
+				BF1B919F2782FBBA00451062 /* PatchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -238,6 +249,7 @@
 				BFBE12B32773B5C0001CF3C5 /* ProgramScene.swift */,
 				BFAA8F29277C6FFF00B65DBF /* MidiFactoryProtocol.swift */,
 				BF68DBFE277E1584007907A3 /* FractalDeviceProtocol.swift */,
+				BFF763DF2785F6B9000766F8 /* MidiInputPort.swift */,
 			);
 			path = Midi;
 			sourceTree = "<group>";
@@ -387,15 +399,19 @@
 				BFBE12B42773B5C0001CF3C5 /* ProgramScene.swift in Sources */,
 				BF6C355C277326E600DBE3D5 /* guitar_dashboard_for_iosApp.swift in Sources */,
 				BFBE12B02773A0CA001CF3C5 /* MidiError.swift in Sources */,
+				BF1B91A02782FBBA00451062 /* PatchView.swift in Sources */,
 				BF68DBFF277E1584007907A3 /* FractalDeviceProtocol.swift in Sources */,
 				BFBE12AB2773482D001CF3C5 /* MidiInfo.swift in Sources */,
 				BF4BCFF9277B493D0065B21D /* ConfigRootModel.swift in Sources */,
+				BF1B919E27806C5000451062 /* ListLabView.swift in Sources */,
 				BFAA8F2D277C73A300B65DBF /* DIContainerProtocol.swift in Sources */,
 				BF68DC09277F7320007907A3 /* MainView.swift in Sources */,
 				BFBE12AE2773981C001CF3C5 /* MidiFactory.swift in Sources */,
 				BF68DC05277E1CF8007907A3 /* Song.swift in Sources */,
+				BFF763E22785FB46000766F8 /* Pedalboard.swift in Sources */,
 				BF4BCFF5277B47460065B21D /* ProgramModel.swift in Sources */,
 				BF4BCFFC277B4CE90065B21D /* DevicesManager.swift in Sources */,
+				BFF763E02785F6B9000766F8 /* MidiInputPort.swift in Sources */,
 				BF4BCFF3277B46D40065B21D /* PatchModel.swift in Sources */,
 				BF68DC03277E1C7B007907A3 /* Patch.swift in Sources */,
 				BF4BCFED277B44D20065B21D /* MarkerModel.swift in Sources */,

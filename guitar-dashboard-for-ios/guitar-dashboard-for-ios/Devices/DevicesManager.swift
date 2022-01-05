@@ -12,6 +12,7 @@ class DevicesManager: DeviceManagerProtocol {
     var libraries: [Library] = []
     let midiFactory: MidiFactory?
     var fractalDevice: FractalDevice? = nil
+    var pedalBoard: Pedalboard? = nil
     
     init() {
         midiFactory = nil
@@ -25,6 +26,10 @@ class DevicesManager: DeviceManagerProtocol {
         if let uwMidiFactory = midiFactory {
             fractalDevice = FractalDevice(midiFactory: uwMidiFactory, deviceName: "Axe-Fx III")
             DIContainer.shared.register(type: MidiFactoryProtocol.self, component: uwMidiFactory)
+            
+            if let uwMidiInputPort = uwMidiFactory.createInputPort(deviceName: "bla") {
+                pedalBoard = Pedalboard(midiInputPort: uwMidiInputPort)
+            }
         }
         
         for libMode in libraryModels {

@@ -12,14 +12,14 @@ struct MidiOutputPort {
     var midiPortRef = MIDIPortRef()
     let midiEndpointRef: MIDIEndpointRef
     
-    init (midiClientRef: MIDIClientRef, portName: String, sourceIndex: Int) throws {
+    init (midiClientRef: MIDIClientRef, portName: String, destinationIndex: Int) throws {
         let status = MIDIOutputPortCreate(midiClientRef, portName as CFString, &midiPortRef)
         
         if (status != noErr) {
             throw MidiError.MidiOperationFailed(errorCode: status, functionName: "MIDIOutputPortCreate")
         }
         
-        midiEndpointRef = MIDIGetDestination(sourceIndex)        
+        midiEndpointRef = MIDIGetDestination(destinationIndex)        
     }
     
     func sendProgramChange(channel: UInt8, program: UInt8) throws {
